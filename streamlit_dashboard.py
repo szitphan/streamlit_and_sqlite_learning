@@ -36,8 +36,8 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data, x="col1", y="col2", color="col3")
 
 
-myslider = st.slider('Celsius')
-st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
+# myslider = st.slider('Celsius')
+# st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
 
-df_db = pd.Dataframe(db.get_data('customer.db'))
+df_db = pd.DataFrame(db.get_data('customer.db'))
 st.write(df_db)
